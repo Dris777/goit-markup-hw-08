@@ -1,0 +1,114 @@
+.container-header {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+header {
+  border-bottom: 1px solid#ececec;
+
+  background-color: var(--heroandadress-text-color);
+}
+.logo {
+  color: var(--dedicated-text-color);
+}
+.logo-a-list-link {
+  position: relative;
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.logo-a {
+  font-family: var(--second-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-right: 93px;
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.logo-a-list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+.logo-a-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.header-contact-tel {
+  color: var(--primary-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover &-svg,
+  &:focus &-svg {
+    fill: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.header-contact {
+  margin-left: auto;
+}
+.header-contact-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.adress-mail {
+  margin-right: 50px;
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover .header-contact-svg,
+  &:focus .header-contact-svg {
+    fill: var(--dedicated-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.header-contact-svg {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
+.header-contact-tel-svg {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+}
