@@ -14,16 +14,26 @@
 <body>
     
         <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container-header">
+    <header class="header adap">
+        <!-- <div class="container-header"> -->
         <nav class="site-nav" >
             <a class="logo-a" href="#" tabindex="0"> <span class="logo">Web</span>Studio </a>
-            <ul class="logo-a-list" > 
-                <li class="logo-a-list-item"> <a class="logo-a-list-link" href="#"> <span class="studio" >Студия</span></a></li>
-                <li class="logo-a-list-item"> <a class="logo-a-list-link" href="./portfolio.html" > <span class="text-portfolio">Портфолио</span></a> </li>
-                <li class="logo-a-list-item"> <a class="logo-a-list-link" href="#" >Контакты</a> </li>
-            </ul>
+            <!-- Кнопка меню на мобилке -->
+            <button type="button" class="menu-button is-open" data-menu-button>
+                <svg width="40" height="40" >
+                <use class="icon-close" href="./images/sprite2.svg#close"></use>
+                <use class="icon-menu" href="./images/sprite2.svg#menu"></use>
+            </svg>
+            </button>
+            
         </nav>
+        <div class="menu is-open" data-menu>
+        <ul class="logo-a-list ">
+            <li class="logo-a-list-item"> <a class="logo-a-list-link" href="#"> <span class="studio">Студия</span></a></li>
+            <li class="logo-a-list-item"> <a class="logo-a-list-link" href="./portfolio.html"> <span
+                        class="text-portfolio">Портфолио</span></a> </li>
+            <li class="logo-a-list-item"> <a class="logo-a-list-link" href="#">Контакты</a> </li>
+        </ul>
         <address class="header-contact">
             <a class="adress-mail"   href="mailto:info@devstudio.com"> <span  >
                 <svg class="header-contact-svg">
@@ -40,7 +50,7 @@
                 <!-- Слоган -->
         <section class="hero">
             <div class="container">
-            <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+            <h1 class="slogan">ЭФФЕКТИВНЫЕ РЕШЕНИЯ  ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button data-modal-open class="button-main" type="button"  > <span class="button-main-text" >Заказать услугу</span></button>
             
             <div data-modal class="backdrop is-hidden">
@@ -72,7 +82,7 @@
             </div>
         </section>
         <!-- Критерии  -->
-    <section class="criterion">
+    <!-- <section class="criterion">
         
         <div class="container">
             <ul class="criterion-list">
@@ -96,7 +106,7 @@
         </div>
     </section>
         <!-- Чем мы занимаемся -->
-        <section class="about-us">
+        <!-- <section class="about-us">
         <div class="container">
             <h2 class="about-us-title">Чем мы занимаемся </h2>
             <ul class="about-us-list">
@@ -109,9 +119,9 @@
                 </div> </li></div>
             </ul>
         </div>
-        </section>
+        </section> -->
         <!-- Наша команда -->
-        <section class="team">
+        <!-- <section class="team">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list" >
@@ -183,10 +193,10 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Постоянные клиенты -->
-        <section class="clients">
+        <!-- <section class="clients">
             <div class="container">
             <h2 class="clients-title" >Постоянные клиенты</h2>
         <ul class="clients-list">
@@ -199,9 +209,9 @@
         </ul>
         </div>
         </section>
-        </main>
+        </main> --> -->
         <!-- Подвал -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container-foot">
                 <div class="footer-container">
                 <div class="footer-maininfo" >
@@ -215,7 +225,7 @@
             </address>
                 </div>
             <!-- Присоединяйтесь -->
-            <div class="container-recconect">
+            <!-- <div class="container-recconect">
                 <h4>ПРИСОЕДИНЯЙТЕСЬ</h4>
                 
                 <ul class="container-recconect-list">
@@ -236,7 +246,7 @@
                 </ul>
             </div>
             <!-- Обратная связь телега -->
-            <div class="subscribe">
+            <!-- <div class="subscribe">
                 <H4>Подпишитесь на рассылку</H4>
                 <div class="form-subscribe">
                 <form action="" method="post"> 
@@ -250,9 +260,10 @@
 
 
             </div>
-            </div>
+            </div> -->
             
-        </footer>
+        <!-- </footer> --> --> -->
+    
     
     <script src="./js/modal.js"></script>
 </body>

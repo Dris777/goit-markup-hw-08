@@ -1,27 +1,76 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 94px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero.jpg');
+    url('../images/imgherox1.jpg');
+  width: 480px;
+  height: 400px;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  @media screen and (max-width: 480px) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/imgherox2.jpg');
+    width: 480px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slogan {
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herotabletx1.jpg');
+    background-size: contain;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/herotabletx2.jpg');
+
+    height: 400px;
+    background-repeat: no-repeat;
+  }
 }
 .slogan {
+  display: block;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  padding-top: 118px;
+  // padding-right: 60px;
+  // padding-left: 60px;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 200px;
-  margin-bottom: 30px;
   color: var(--heroandadress-text-color);
 }
 
@@ -31,7 +80,7 @@
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-bottom: 200px;
+  margin-top: 30px;
 }
 .button-main-text {
   font-family: var(--main-font);
