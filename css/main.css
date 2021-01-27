@@ -102,6 +102,7 @@ a {
   background-color: #2196f3;
   bottom: -8px;
   left: 0;
+  border-radius: 2px;
 }
 
 header {
@@ -262,6 +263,11 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-right: 81px;
+    margin-top: 32px;
+  }
+  .logo-a-list-item:not(:last-child) {
+    margin-right: 50px;
   }
   .adress-mail {
     display: block;
@@ -274,11 +280,82 @@ header {
     margin-bottom: 26px;
     margin-right: 88px;
   }
+  .logo-a-list-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .adress-mail {
+    font-size: 12px;
+    line-height: 1.16;
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
+  .header-contact-tel {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .studio::after {
+    bottom: -32px;
+  }
 }
 
-.site-nav {
-  border-bottom: 1px solid #ececec;
-  background-color: var(--heroandadress-text-color);
+@media screen and (min-width: 1200px) {
+  header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80px;
+  }
+  .menu.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu-button {
+    display: none;
+  }
+  .logo-a-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo-a-list-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .logo-a-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .logo-a {
+    font-size: 26px;
+    line-height: 1.19;
+    display: block;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 88px;
+  }
+  .adress-mail {
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 30px;
+  }
+  .header-contact-tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .studio::after {
+    bottom: -32px;
+  }
 }
 
 .header-contact-tel {
@@ -306,7 +383,6 @@ header {
 .adress-mail {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
 }
 
 .adress-mail:hover, .adress-mail:focus {
